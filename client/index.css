@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:400,900);
+* {
+    border: 1px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+body {
+    text-align: left;
+    background: #F06060;
+}
+button{
+    background: none repeat scroll 0 0 #CB4E4E;
+    border-radius: 100px;
+    box-shadow: 0 8px #AB3C3C;
+    color: #FFFFFF;
+    width: 150px;
+    height: 150px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+  }
+button:hover{
+    box-shadow: 0px 5px #AB3C3C;
+    top: 2px; 
+}
+button:active{
+    box-shadow: 0px 0px #AB3C3C;
+    top: 5px; 
+}
+#position {
+    width:30%;
+    padding: 3em;
+}
+#up, #down {
+    margin-left: 80px;
+}
