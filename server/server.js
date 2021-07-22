@@ -14,8 +14,8 @@ var io = require('socket.io')(server);
 var position = new Array(0, 0);
 var velocity = new Array(0, 0);
 var acceleration = new Array(0, 0);
-const friction = 0.6;
-const boost = 1;
+const friction = 0.9;
+const boost = 8;
 // io.origins('https://www.differentServerDomain.fr:* https://www.differentServerDomain.fr/wp-admin/index.php:*');
 // start of server
 
@@ -60,4 +60,6 @@ setInterval(() => {
   position[1] += velocity[1];
   velocity[0] *= friction;
   velocity[1] *= friction;
-}, 100);
+  position[0] = Math.round(position[0]);
+  position[1] = Math.round(position[1]);
+}, 10);

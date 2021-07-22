@@ -1,17 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fire Inside Your Brain Matter</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="http://localhost:3000/socket.io/socket.io.js"></script>
-    <script src="index.js"></script>
 </head>
 <body>
-    <div id = "position"></div>
-    <button id = "up">up</button>
-    <br>
-    <button id = "left">left</button>
-    <button id = "right">right</button>
-    <br>
-    <button id = "down">down</button>
+    <div style="float: left;">
+        <div id = "position"></div>
+        <button id = "up">up</button>
+        <br>
+        <button id = "left">left</button>
+        <button id = "right">right</button>
+        <br>
+        <button id = "down">down</button>
+    </div>
+    <div style="float: right;"></div>
+        <canvas class="drawing-canvas" width="1000px" height="800px"></canvas>
+    </div>
+    <script src="./index.js" charset="utf-8"></script>
 </body>
 </html>
